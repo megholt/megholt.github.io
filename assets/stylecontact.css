@@ -45,17 +45,8 @@ background: #edeae5;
     font-size: 48px;
 }
 
-#nav {
-    font-size: 20px;
-    position: absolute;
-    color: white;
-    text-align: right;
-    right: 90px;
-    bottom: 90px;
-}
-#contact {
-    font-size: 30px;
-}
+
+
 #content-container {
     background: rgba(0,0,0,0.5);
     /*background: red;*/
@@ -172,4 +163,13 @@ background: #edeae5;
 }
 #message::-webkit-input-placeholder {
     color: white;
+}
+
+#nav {
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    text-align: right;
+    right: 90px;
+    bottom: 90px;
 }

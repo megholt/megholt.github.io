@@ -45,18 +45,8 @@ background: #edeae5;
     font-size: 48px;
 }
 
-#nav {
-    font-size: 20px;
-    position: absolute;
-    color: white;
-    text-align: right;
-    right: 90px;
-    bottom: 90px;   
-}
 
-#aboutme {
-    font-size: 30px;
-}
+
 #about-container {
 	background: rgba(0,0,0,0.5);
     /*background: red;*/
@@ -83,27 +73,35 @@ background: #edeae5;
 	top: 100px;
 	left: 500px;
 /*    border-color: rgba(0,0,0,0.5);*/
-border: 20px solid rgba(0,0,0,0.7);
+    border: 20px solid rgba(0,0,0,0.7);
 }
 #pic-seattle {
-	height: 500px;
+	height: 80%;
 	display: none;
 }
 
 /*try making pic sizes full screen! or like hieght of your viewport*/
 #pic-berkeley {
-	height: 500px;
+	height: 80%;
 	display: none;
 }
 #pic-cs {
-    height: 400px;
+    height: 70%;
     display: none;
 }
 #pic-surf {
-	height: 500px;
+	height: 80%;
 	display: none;
 }
 #pic-tennis {
-	height: 500px;
+	height: 80%;
 	display: none;
+}
+#nav {
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    text-align: right;
+    right: 90px;
+    bottom: 90px;   
 }
