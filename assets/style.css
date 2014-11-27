@@ -21,7 +21,7 @@ height: 100%;
 /* Freebies */
 
 body {	/*the outer layer of the site and global style attributes*/
-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: 'Raleway', sans-serif;
 margin: 0px;
 background: #edeae5;
 }
@@ -53,6 +53,7 @@ background: #edeae5;
 }
 #heading {
     font-size: 48px;
+    font-family: 'Raleway', sans-serif;
 }
 
 #pic {
@@ -62,6 +63,7 @@ background: #edeae5;
 /*    z-index: 100;
 */}
 #nav {
+    font-family: 'Raleway', sans-serif;   
     font-size: 25px;
     position: absolute;
     color: white;
