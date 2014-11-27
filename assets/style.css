@@ -1,0 +1,62 @@
+ /* Utility Stylesheets */
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+.clear {
+clear: both;
+}
+
+.img-scaled {
+width: 100%;
+}
+
+.img-scaled-wh {
+width: 100%;
+height: 100%;
+}
+
+/* Freebies */
+
+body {	/*the outer layer of the site and global style attributes*/
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+margin: 0px;
+background: #edeae5;
+}
+
+#background {
+    background: url('background3.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#main {
+    position: absolute;
+    color: white;
+    bottom: 100px;
+    left: 90px;
+    text-align: left;
+}
+#heading {
+    font-size: 48px;
+}
+#pic {
+    height: 200px;
+    padding: 10px;
+/*    z-index: 100;
+*/}
+#nav {
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    text-align: right;
+    right: 90px;
+    bottom: 90px;
+}
+#home {
+    font-size: 30px;
+}
