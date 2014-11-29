@@ -47,13 +47,21 @@ background: #edeae5;
 #main {
     position: absolute;
     color: white;
-    top: 90px;
-    left: 90px;
+    /*top: 90px;
+    left: 90px;*/
     text-align: left;
+    bottom: 190px;
+    left: 90px;
 }
 #heading {
-    font-size: 48px;
+    font-size: 58px;
     font-family: 'Raleway', sans-serif;
+}
+#subheading {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+
 }
 
 #pic {

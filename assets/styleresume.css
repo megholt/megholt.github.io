@@ -55,10 +55,10 @@ background: #edeae5;
 
 #iframe {
     position: absolute;
-    width: 40%;
+    width: 60%;
     height: 80%;
     top: 100px;
-    left: calc(50% - 250px);
+    left: calc(50% - 350px);
 }
 
 #nav {
