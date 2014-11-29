@@ -1,29 +1,11 @@
-/* Utility Stylesheets */
-
 a {
-color: inherit;
-text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
-.clear {
-clear: both;
-}
-
-.img-scaled {
-width: 100%;
-}
-
-.img-scaled-wh {
-width: 100%;
-height: 100%;
-}
-
-/* Freebies */
-
-body {	/*the outer layer of the site and global style attributes*/
-font-family: 'Raleway', sans-serif;
-margin: 0px;
-background: #edeae5;
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
 }
 
 #background {
@@ -45,12 +27,8 @@ background: #edeae5;
     font-size: 48px;
     font-family: 'Raleway', sans-serif;
 }
-
-
-
 #content-container {
     background: rgba(0,0,0,0.5);
-    /*background: red;*/
     position: absolute;
     text-align: left;
     left: 90px;
@@ -88,7 +66,6 @@ background: #edeae5;
     z-index: 100;
     display: none;
 }
-
 #modal-overlay {
     background: rgba(0,0,0,0.5);
     width: 100%;
@@ -96,8 +73,6 @@ background: #edeae5;
     position: fixed;
     z-index: -1;
 }
-
-
 #modal-box {
     position: absolute;
     width: 500px;
@@ -107,7 +82,6 @@ background: #edeae5;
     z-index: 100;
     background: #5485BB;
 }
-
 #button {
     display: inline-block;
     float: right;

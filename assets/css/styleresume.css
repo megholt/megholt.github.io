@@ -1,29 +1,11 @@
-/* Utility Stylesheets */
-
 a {
-color: inherit;
-text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
-.clear {
-clear: both;
-}
-
-.img-scaled {
-width: 100%;
-}
-
-.img-scaled-wh {
-width: 100%;
-height: 100%;
-}
-
-/* Freebies */
-
-body {	/*the outer layer of the site and global style attributes*/
-font-family: 'Raleway', sans-serif;
-margin: 0px;
-background: #edeae5;
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
 }
 
 #background {
