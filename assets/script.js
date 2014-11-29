@@ -46,13 +46,20 @@ $(document).ready(function(){
 		$("#pic-tennis").hide();
 		$("#pic-cs").hide();
 		$("#home").css("color", "white");
-		$("#about").css("color", "white");
+		$("#aboutme").css("color", "white");
 		$("#resume").css("color", "white");
 		$("#contact").css("color", "white");
+		$("#link").text("Contact me");
+
 	})
+
+	
 
 	$("#link").click(function() {
 		$("#modal-container").show();
+	})
+	$("#link").hover(function() {
+		$("#link").text("Send me a message!");
 	})
 
 	$("#button").click(function() {
