@@ -1,4 +1,4 @@
- /* Utility Stylesheets */
+/* Utility Stylesheets */
 
 a {
 color: inherit;
@@ -33,43 +33,34 @@ background: #edeae5;
     height: 100%;
     position: absolute;
 }
-
-/*#main {
+#main {
     position: absolute;
     color: white;
-    bottom: 100px;
+    top: 90px;
     left: 90px;
     text-align: left;
 }
 #heading {
     font-size: 48px;
-}*/
-#main {
+    font-family: 'Raleway', sans-serif;   
+}
+
+
+#iframe-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+
+#iframe {
     position: absolute;
-    color: white;
-    /*top: 90px;
-    left: 90px;*/
-    text-align: left;
-    bottom: 190px;
-    left: 90px;
-}
-#heading {
-    font-size: 58px;
-    font-family: 'Raleway', sans-serif;
-}
-#subheading {
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-    padding: 10px;
-
+    width: 60%;
+    height: 80%;
+    top: 100px;
+    left: calc(50% - 350px);
 }
 
-#pic {
-    height: 200px;
-    padding: 10px;
-    display: none;
-/*    z-index: 100;
-*/}
 #nav {
     font-family: 'Raleway', sans-serif;   
     font-size: 20px;
