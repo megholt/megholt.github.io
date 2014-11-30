@@ -1,0 +1,402 @@
+<!DOCTYPE
+  html
+  PUBLIC
+  "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+  <title>
+  Panoramio - Photo explorer
+</title>
+
+  <meta
+    name="description"
+    content="Photo-sharing community. Discover the world through photos." />
+
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=9" />
+
+  <link
+    rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400|Open+Sans:300&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext,greek,greek-ext,vietnamese">
+
+  
+    
+
+
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-184567-1'],
+            ['_trackPageview', '/photo_explorer']);
+  
+    _gaq.push(['_trackEvent',
+      "AcrylicPageView",
+      "True",
+      null || undefined,
+      null || undefined,
+      !false,
+      ]);
+  
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+        'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/screen_interim.ltr.css?v=e275b9" />
+  
+    <link rel="stylesheet" type="text/css" href="/css/acrylic.ltr.css?v=b6f8c9" />
+  
+
+  
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  
+    <script type="text/javascript" src="/js/jquery-history.js"></script>
+  
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places,search&amp;language=en&amp;client=google-panoramio"></script>
+  
+    <script type="text/javascript" src="/wapi/wapi.js?v=1.h&amp;sv=efbbe3"></script>
+  
+    <script type="text/javascript" src="/js_lib/panoramio.js?v=da07c1"></script>
+  
+
+  <script type="text/javascript">
+    pano.translation.setLocale(
+      "en");
+  </script>
+
+</head>
+
+<body class="full_viewport_page-root panoramio glass">
+
+  <script type="text/javascript">
+    
+    pano.glass.register(pano.glass.layout.FullViewportPage.start);
+  </script>
+
+  <div id="header"><div class="navbar" id="navbar"><div class="navbar-inner"><a href="/?no_redirect" class="navbar-left"><span class="navbar-logo"><span class="navbar-logo-image"></span><span class="navbar-logo-text"><span class="navbar-logo-separator"></span><span>Google Maps</span></span></span></a><div class="collapsed-menu"><div id="collapsed-menu-button" class="goog-toolbar-menu-button collapsed-menu-icon"><div class="collapse-menu-container goog-menu" style="display: none; background-color: rgba(0,0,0,0.8); width: 100%;"><div class="collapse-menu-profile"><button class="jfk-button jfk-button-primary"
+                    id="navbar-signup-button"
+                    
+                    onclick="location.href='/signup';">Sign up</button><a id="navbar-signup-link" class="navbar-signup-link-collapsed"
+                    
+                    href="/signin">Sign in</a></div><div class="collapse-menu-profile-links"><div class="collapse-menu-profile-link-container"><a href="/help" class="collapse-menu-profile-link">Help</a></div></div><div class="collapse-menu-explore-links"><div class="collapse-menu-explore-column"><div class="collapse-menu-explore-column-header"
+                    
+                    >Explore Panoramio</div><a href="/map" class="collapse-menu-explore-column-link"
+                    
+                    >World map</a><a href="/places" class="collapse-menu-explore-column-link"
+                    
+                    >Cool places</a><a href="/tags" class="collapse-menu-explore-column-link"
+                    
+                    >Tags</a></div><div class="collapse-menu-explore-column"><div class="collapse-menu-explore-column-header">Community</div><a href="/groups" class="collapse-menu-explore-column-link">Groups</a><a href="/contest" class="collapse-menu-explore-column-link">Photo contest</a><a href="/blog" class="collapse-menu-explore-column-link">Blog</a><a href="/forum" class="collapse-menu-explore-column-link">Discussion forums</a></div></div></div></div></div><div class="search-menu"><div id="search-menu-icon"></div></div><div id="explore-menu-button-wrapper"><div id="explore-menu-button" class="menu_bar-button goog-toolbar-menu-button"><div class="menu_bar-button_label">Explore</div><div class="goog-menu" style="display: none; background-color: rgba(0,0,0,0.8)"><div class="explore-menu"><div class="explore-menu-column"><div class="explore-menu-column-header"
+                  
+                  >Explore Panoramio</div><a href="/map" class="explore-menu-column-link"
+                  
+                  >World map</a><a href="/places" class="explore-menu-column-link"
+                  
+                  >Cool places</a><a href="/tags" class="explore-menu-column-link"
+                  
+                  >Tags</a></div><div class="explore-menu-column"><div class="explore-menu-column-header">Community</div><a href="/groups" class="explore-menu-column-link">Groups</a><a href="/contest" class="explore-menu-column-link">Photo contest</a><a href="/blog" class="explore-menu-column-link">Blog</a><a href="/forum" class="explore-menu-column-link">Discussion forums</a></div></div></div></div></div><div id="explore-wrapper"><input type=text class="explore-input" id="explore-expanded-input"
+          
+          placeholder="Search for a place"></div><div id="explore-collapsed-wrapper"><input type=text class="explore-input" id="explore-collapsed-input"
+          
+          placeholder="Search for a place"></div><div class="navbar-profile"><div id="navbar-signin-link-container"><a id="navbar-signin-direct-link" href="/signin/google">Sign in</a><div id="signin-menu-button" class="goog-menu-button"><div class="goog-menu" style="display: none; background-color: rgba(0,0,0,0.8);"><div id="signin-menu-container"><a id="navbar-signin-drop-link"
+                    
+                    href="/signin/google">Sign in with a Google account</a><a id="navbar-signin-legacy-drop-link"
+                    
+                    href="/signin/legacy">Use a legacy account</a></div></div></div></div><button class="jfk-button jfk-button-primary"
+            id="navbar-signup-button"
+            
+            onclick="location.href='/signup';">Sign up</button></div></div></div><script type="text/javascript">
+//<![CDATA[
+  pano.translation.register('Connect account',
+  
+                            'Connect account');
+  pano.translation.register('Connecting account…',
+  
+                            'Connecting account...');
+  pano.translation.register('Connecting to Google+ failed.',
+  
+                            'Connecting to Google+ failed.');
+
+  $(document).ready(function() {
+    $('#gplus_profile_avatar').error(function() {
+      $(this).unbind('error');
+      $(this).attr('src', '/img/user_avatar.png');
+    });
+  });
+//]]></script><div id="gplus-upgrade-dialog" style="display: none;"
+     
+  title="Connect your Google+ account to Panoramio"><div id="gplus-upgrade-dialog-content"><div id="gplus_profile_explanation">
+     
+      
+        This is how your name and profile photo will appear on Panoramio if you connect this Google+ account.
+        You cannot switch to a different account later.
+        <a href="/help/gplus-faq" target="_blank">Learn more</a>.
+      </div><img src="/img/user_avatar.png" width="120" height="120"
+        id="gplus_profile_avatar" alt=""><div class="gplus_profile_info"><div id="gplus_profile_name"></div><div id="gplus_profile_location"></div></div></div></div><script type="text/javascript">
+  pano.acrylic.Header.start(null,
+                            'an:ohLUSwORnKOfkeqwkGflOzoxNDE2NTU0MjUzNDcwOTIy', true);
+</script><div class="photo_explorer_controls-root" id="photo_explorer_controls-root"><span id="photo_explorer_controls-back"
+        class="photo_explorer_controls-button
+               glass_jfk-button_standard
+               glass_jfk-button_narrow"
+        title="Close the photo explorer"><img src="/img/glass/pages/photo_explorer/back.png"
+          class="jfk-button-img"
+          alt="Close the photo explorer" /></span><span id="photo_explorer_controls-constraints_box"
+        class="photo_explorer_controls-constraints_box
+               jfk-textinput"><span id="photo_explorer_controls-show_constraints"
+          class="photo_explorer_controls-show_constraints"></span><a id="photo_explorer_controls-change_constraints"
+          class="photo_explorer_controls-change_constraints"
+          title="Change what photos are shown">
+          Change
+        </a></span><span id="photo_explorer_controls-list"
+        class="photo_explorer_controls-button
+               glass_jfk-button_standard
+               glass_jfk-button_toggle
+               glass_jfk-button_narrow"
+        title="Switch between one-photo and photo-list modes"><img src="/img/glass/pages/photo_explorer/list_mode.png"
+          class="jfk-button-img"
+          alt="Switch between one-photo and photo-list modes" /></span><span id="photo_explorer_controls-previous"
+        class="photo_explorer_controls-button
+               glass_jfk-button_standard
+               glass_jfk-button_narrow
+               glass_jfk-button_left"
+        title="Previous"><img src="/img/glass/pages/photo_explorer/previous.png"
+          class="jfk-button-img"
+          alt="Previous" /></span><span id="photo_explorer_controls-next"
+        class="photo_explorer_controls-button
+               glass_jfk-button_standard
+               glass_jfk-button_narrow
+               glass_jfk-button_middle"
+        title="Next"><img src="/img/glass/pages/photo_explorer/next.png"
+          class="jfk-button-img"
+          alt="Next" /></span><span id="photo_explorer_controls-slideshow_state"
+        class="photo_explorer_controls-button
+               glass_jfk-button_standard
+               glass_jfk-button_toggle
+               glass_jfk-button_narrow
+               glass_jfk-button_middle"
+        title="Start the slideshow"><img src="/img/glass/pages/photo_explorer/slide_play.png"
+          class="jfk-button-img"
+          alt="Start the slideshow" /></span><span id="photo_explorer_controls-slideshow_menu_button"
+        class="photo_explorer_controls-button
+               glass_jfk-button_closure
+               glass_jfk-button_right"></span><span id="photo_explorer_controls-photo_page"
+        class="photo_explorer_controls-button
+               glass_jfk-button_standard
+               glass_jfk-button_narrow
+               glass_jfk-button_left"
+        title="Open the photo page"><img src="/img/glass/pages/photo_explorer/details.png"
+          class="jfk-button-img"
+          alt="Open the photo page" /></span><span id="photo_explorer_controls-original"
+        class="photo_explorer_controls-button
+               glass_jfk-button_standard
+               glass_jfk-button_narrow
+               glass_jfk-button_right"
+        title="View the original image"><img src="/img/glass/pages/photo_explorer/original.png"
+          class="jfk-button-img"
+          alt="View the original image" /></span><span id="photo_explorer_controls-fullscreen"
+        class="photo_explorer_controls-button
+               glass_jfk-button_standard
+               glass_jfk-button_toggle
+               glass_jfk-button_narrow"
+        title="View in full screen"><img src="/img/glass/pages/photo_explorer/fullscreen.png"
+          class="jfk-button-img"
+          alt="View in full screen" /></span><div id="photo_explorer_controls-slideshow_menu"
+        class="photo_explorer_controls-slideshow_menu
+               goog-menu-checkbox"
+        style="display: none"><div id="photo_explorer_controls-slideshow_play"
+          class="goog-menuitem goog-option"><img src="/img/glass/pages/photo_explorer/slide_play.png"
+            class="menuitem_icon_in_label"
+            alt=""
+            title="Start the slideshow" />
+          Play
+        </div><div id="photo_explorer_controls-slideshow_stop"
+          class="goog-menuitem goog-option"><img src="/img/glass/pages/photo_explorer/slide_pause.png"
+            class="menuitem_icon_in_label"
+            alt=""
+            title="Pause the slideshow" />
+          Pause
+        </div><hr /><div id="photo_explorer_controls-slideshow_to_start"
+          class="goog-menuitem"><img src="/img/glass/pages/photo_explorer/slide_to_start.png"
+            class="menuitem_icon_in_label"
+            alt=""
+            title="Move to the beginning" />
+          Rewind
+        </div><hr /><div id="photo_explorer_controls-order"
+          class="goog-menuitem goog-option"><img src="/img/glass/pages/photo_explorer/order.png"
+            class="menuitem_icon_in_label"
+            alt=""
+            title="Reverse the photo order" />
+          Reverse order
+        </div><div id="photo_explorer_controls-slideshow_repeat"
+          class="goog-menuitem goog-option"><img src="/img/glass/pages/photo_explorer/slide_repeat.png"
+            class="menuitem_icon_in_label"
+            alt=""
+            title="Restart after the end" />
+          Repeat mode
+        </div><hr /><div id="photo_explorer_controls-slideshow_2s"
+          class="goog-menuitem goog-option"
+          title="Advance every 2 seconds">
+          2 s
+        </div><div id="photo_explorer_controls-slideshow_5s"
+          class="goog-menuitem goog-option"
+          title="Advance every 5 seconds">
+          5 s
+        </div><div id="photo_explorer_controls-slideshow_10s"
+          class="goog-menuitem goog-option"
+          title="Advance every 10 seconds">
+          10 s
+        </div><div id="photo_explorer_controls-slideshow_1min"
+          class="goog-menuitem goog-option"
+          title="Advance every minute">
+          1 min
+        </div><div id="photo_explorer_controls-slideshow_5min"
+          class="goog-menuitem goog-option"
+          title="Advance every 5 minutes">
+          5 min
+        </div></div></div></div>
+
+  
+  
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  pano.glass.register(
+      pano.glass.components.MessageBar.start,
+      null);
+</script>
+
+<div id="message_bar-root" class="message_bar-root">
+  <div id="message_bar-wrapper" class="message_bar-wrapper"></div>
+</div>
+
+
+  <div id="content" style="margin: 0; padding: 0;">
+    
+<div class="photo_explorer-root">
+  <div id="photo_explorer-widget_single"
+    class="photo_explorer-widget_single"></div>
+  <div id="photo_explorer-widget_list"
+    class="photo_explorer-widget_list"></div>
+  <div id="photo_explorer-widget_panorama_flat"
+    class="photo_explorer-widget_panorama_flat"></div>
+  <div id="photo_explorer-widget_panorama_spherical"
+    class="photo_explorer-widget_panorama_spherical"></div>
+</div>
+
+<script type="text/javascript">
+  pano.translation.register(
+      'Explore in another way',
+      'Explore in another way');
+  pano.translation.register(
+      'You are exploring: ',
+      'You are exploring: ');
+  pano.translation.register(
+      '(best photos)',
+      'best photos');
+  pano.translation.register(
+      'Explore one of the groups that this photo is in',
+      'Explore one of the groups that this photo is in');
+  pano.translation.register(
+      'Explore one of the tags that this photo has',
+      'Explore one of the tags that this photo has');
+  pano.translation.register(
+      'Groups:',
+      'Groups:');
+  pano.translation.register(
+      'Tags:',
+      'Tags:');
+  pano.translation.register(
+      'Explore this user',
+      'Explore this user');
+  pano.translation.register(
+      'Explore this user\'s best photos',
+      'Explore this user\u0027s best photos');
+  pano.translation.register(
+      'Explore this tag',
+      'Explore this tag');
+  pano.translation.register(
+      'Explore this group',
+      'Explore this group');
+  pano.translation.register(
+      'Loading additional photo information',
+      'Loading additional photo information');
+  pano.translation.register(
+      'Error loading additional photo information',
+      'Error loading additional photo information');
+  pano.translation.register(
+      'Explore {popular}popular{end}, {recent}recent{end}, {all}all{end} photos',
+      'Explore {popular}popular{end}, {recent}recent{end}, {all}all{end} photos');
+  pano.translation.register(
+      '(near {coordinates})',
+      '(near {coordinates})');
+  pano.translation.register(
+      'All photos',
+      'All photos');
+  pano.translation.register(
+      'Popular photos',
+      'Popular photos');
+  pano.translation.register(
+      'Recent photos',
+      'Recent photos');
+  pano.translation.register(
+      'Photos by {author} with the tag {tag}',
+      'Photos by {author} with the tag {tag}');
+  pano.translation.register(
+      'Best photos by {author}',
+      'Best photos by {author}');
+  pano.translation.register(
+      'Photos by {author} in the group {group}',
+      'Photos by {author} in the group {group}');
+  pano.translation.register(
+      'Photos by {author}',
+      'Photos by {author}');
+  pano.translation.register(
+      'Photos with the tag {tag}',
+      'Photos with the tag {tag}');
+  pano.translation.register(
+      'Photos in the group {group}',
+      'Photos in the group {group}');
+  pano.translation.register(
+      'Custom photo set',
+      'Custom photo set');
+
+  pano.glass.pages.photoExplorer.PhotoExplorer.start(
+      null,
+      true);
+</script>
+
+
+  </div>
+
+  
+  <div class="photo_explorer_footer-root" id="footer">
+  </div>
+
+
+  
+
+</body>
+
+</html>
