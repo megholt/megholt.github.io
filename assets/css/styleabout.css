@@ -48,30 +48,43 @@ body {
     cursor: pointer;
 }
 
-.pic {
-	position: absolute;
-	top: 100px;
-	left: 500px;
-    border: 20px solid rgba(0,0,0,0.7);
-    display: none;
-}
 #pic-seattle {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    border: 20px solid rgba(0,0,0,0.7);
 	height: 80%;
 	display: none;
 }
 #pic-berkeley {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    border: 20px solid rgba(0,0,0,0.7);
 	height: 80%;
 	display: none;
 }
 #pic-cs {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    border: 20px solid rgba(0,0,0,0.7);
     height: 70%;
     display: none;
 }
 #pic-surf {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    border: 20px solid rgba(0,0,0,0.7);
 	height: 80%;
 	display: none;
 }
 #pic-tennis {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    border: 20px solid rgba(0,0,0,0.7);
 	height: 80%;
 	display: none;
 }
